@@ -1,0 +1,62 @@
+
+@import '../../weui.wxss';
+
+.page__hd{
+  background-color:  #1e82d2;
+  height: 200rpx;
+
+}
+.page__hd_search{
+  width: 550rpx;
+  height: 68rpx;
+  background-color:  #1a72b9;
+  margin-left: 23.4rpx;
+  font-size: 30rpx;
+  border-radius: 20px;
+}
+
+.page__hd_search image{
+  width: 68rpx;
+  height: 68rpx;
+  margin-left:25rpx;
+}
+.page__hd_search_talk{
+  width: 68rpx;
+  height: 68rpx;
+  margin-left:133rpx; 
+}
+.center{
+  display: flex;
+  justify-content: start;
+  align-items: center;  
+}
+.hd_row{
+  display: flex;
+  justify-content: start;
+  align-items: start;  
+}
+.page__hd_friends{
+  height: 68rpx;
+  width: 68rpx;
+  margin-left: 20rpx;
+
+}
+.page__hd_add{
+  height: 68rpx;
+  width: 80rpx;
+  margin-left: 10rpx;
+ 
+}
+.page__hd_friends image{
+  width: 68rpx;
+  height: 68rpx;
+  
+}
+.page__hd_add image{
+  width: 68rpx;
+  height: 68rpx;
+
+}
+
+
+
