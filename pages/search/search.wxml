@@ -9,4 +9,7 @@
             </view> 
            
         </view>
+        <navigator url="../index/index" open-type="switchTab"  hover-class="none" >
+        <view class="back">取消</view>
+        </navigator>
 </view>

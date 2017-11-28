@@ -1,4 +1,4 @@
-// pages/search.js
+// pages/connector/connector.js
 Page({
 
   /**
@@ -14,11 +14,7 @@ Page({
   onLoad: function (options) {
   
   },
-bindViewTap: function(){
-  wx.switchTab({
-    url:'../index/index'
-  })
-},
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
