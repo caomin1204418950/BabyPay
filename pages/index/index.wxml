@@ -1,20 +1,27 @@
-<view class="section">
+<view class="page">
     <view class="page__hd hd_row">
-
-            <view class="page__hd_search center">
-             <image src="../../images/search.png" />
-               全城热搜：火锅
-               <view class="page__hd_search_talk">
+     
+        <view class="page__hd_search center">
+   
+            <image src="../../images/search.png" />
+     <navigator url="../search/search" >
+            <view  class="push"></view>
+                 
+     </navigator> 
+            <view class="page__hd_search_talk">
                 <image  src="../../images/talk.png" />
-               </view>            
-            </view>
-            <view class="page__hd_friends">
+            </view> 
+           
+        </view>
+
+
+    <view class="page__hd_friends">
                 <image  src="../../images/friends.png" />
-            </view>
-            <view class="page__hd_add">
+        </view>
+        <view class="page__hd_add">
                 <image  src="../../images/add.png" />
-            </view>
-              
+        </view>
+   
 
     </view>
 </view>

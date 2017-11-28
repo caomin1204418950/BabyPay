@@ -1,0 +1,32 @@
+.page__hd_search{
+  width: 550rpx;
+  height: 68rpx;
+  background-color:  #f2f2f2;
+  margin-left: 23.4rpx;
+  font-size: 30rpx;
+  border-radius: 20px;
+}
+.page__hd_search image{
+    width: 40rpx;
+    height: 40rpx;
+    margin-left:25rpx;
+  }
+  .center{
+    display: flex;
+    justify-content: start;
+    align-items: center;  
+    
+  }
+  .dot_in{
+    width: 365rpx;
+    height: 50rpx;
+    
+    }
+  .page__hd_search_talk image{
+    width: 40rpx;
+    height: 40rpx; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-left: 40rpx;
+  }

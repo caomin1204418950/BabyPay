@@ -4,8 +4,8 @@
 .page__hd{
   background-color:  #1e82d2;
   height: 200rpx;
-
 }
+
 .page__hd_search{
   width: 550rpx;
   height: 68rpx;
@@ -20,15 +20,27 @@
   height: 68rpx;
   margin-left:25rpx;
 }
+.push{
+width: 365rpx;
+height: 50rpx;
+
+}
 .page__hd_search_talk{
   width: 68rpx;
   height: 68rpx;
-  margin-left:133rpx; 
+
+ 
+}
+.page__hd_search_talk image{
+  width: 68rpx;
+  height: 68rpx; 
+  margin:0 ;
 }
 .center{
   display: flex;
   justify-content: start;
   align-items: center;  
+  
 }
 .hd_row{
   display: flex;

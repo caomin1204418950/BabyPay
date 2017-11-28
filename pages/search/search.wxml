@@ -1,0 +1,12 @@
+ <view class="page__hd hd_row">
+     
+        <view class="page__hd_search center">
+   
+            <image src="../../images/sousuo.png" />
+            <input type="text" class="dot_in"/>
+            <view class="page__hd_search_talk">
+                <image  src="../../images/vc_inp.png" />
+            </view> 
+           
+        </view>
+</view>

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/mine/mine",
     "pages/friends/friends",
-    "pages/koubei/koubei"
+    "pages/koubei/koubei",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,19 +18,27 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "./images/shouye.png",
+        "selectedIconPath": "./images/shouye_select.png"
       },
       {
         "pagePath": "pages/koubei/koubei",
-        "text": "口碑"
+        "text": "口碑",
+        "iconPath": "./images/koubei.png",
+        "selectedIconPath": "./images/koubei_select.png"
       },
       {
         "pagePath": "pages/friends/friends",
-        "text": "朋友"
+        "text": "朋友",
+        "iconPath": "./images/pengyou.png",
+        "selectedIconPath": "./images/pengyou_select.png"
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "./images/wode.png",
+        "selectedIconPath": "./images/wode_select.png"
       }
     ]
   }
