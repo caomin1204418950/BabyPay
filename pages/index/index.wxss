@@ -69,6 +69,55 @@ height: 50rpx;
   height: 68rpx;
 
 }
+.page__mid_service{
+  width: 750rpx;
+  height: 600rpx;
 
+}
+.list{
+  width: 180rpx;
+  height: 150rpx;
+  margin-left: 3.999rpx;
+  border: 1px solid white;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.list_more{
+  width: 180rpx;
+  height: 150rpx;
+  margin-left: 3.999rpx;
+  border: 1px solid white;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  
+}
+
+.list image{
+  width: 90rpx;
+  height: 90rpx;
+ 
+}
+.list_more image{
+  width: 90rpx;
+  height: 90rpx;
+ 
+}
+
+.list text{
+  font-size: 25rpx;
+  position: absolute;
+  margin-top: 60rpx;
+  margin-bottom: 0;
+}
+.list_more text{
+  font-size: 25rpx;
+  position: absolute;
+  margin-top: 60rpx;
+  margin-bottom: 0;
+}
