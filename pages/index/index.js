@@ -93,6 +93,22 @@ tips:[
   },
   intopage:function(e){
       console.log(e);
+      var id = e.currentTarget.id;
+      console.log(id);
+
+      if(id==5){
+        wx.navigateTo({
+          url: '../didi/didi'})
+      }
+      else if(id=0){
+        wx.scanCode({
+          onlyFromCamera: true,
+          success: (res) => {
+            console.log(res)
+          }
+        })
+      }
+
   },
 
   onLoad: function (options) {

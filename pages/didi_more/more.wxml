@@ -1,0 +1,24 @@
+<view class="page">
+    <view class='page__bd'>
+        <view class='page__bd_types'>
+            <view class='page__bd_type'>
+                <image src='../../images/kuaiche.png'></image>
+            </view>
+            <view class='page__bd_type_dicripe'>快车</view>
+
+        </view>
+        <view class='page__bd_types'>
+            <view class='page__bd_type'>
+                <image src='../../images/zhuanche.png'></image>
+            </view>
+            <view class='page__bd_type_dicripe'>专车</view>
+        </view>
+        <view class='page__bd_types'>
+            <view class='page__bd_type'>
+                <image src='../../images/daijia.png'></image>
+            </view>
+            <view class='page__bd_type_dicripe'>代驾</view>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,18 @@
+<!--pages/didi/didi.wxml-->
+
+<view class='page'>
+    <view class='page__hd'>
+        <view class='page__hd_user'>
+            <image  src='../../images/user.png' bindtap='into_page_user'></image>
+        </view>
+        <view class='swiper-tap'>
+            <view class='swiper-tap-item'>快车</view>
+            <view class='swiper-tap-item'>专车</view>
+            <view class='swiper-tap-item'>代驾</view>
+        </view>
+         <view class='page__hd_more' bindtap='into_page_more'>
+            <image src='../../images/more.png'></image>
+        </view>
+    </view>
+
+</view>

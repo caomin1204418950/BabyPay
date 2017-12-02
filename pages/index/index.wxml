@@ -29,7 +29,7 @@
     </view>
     <view class="page__mid_service">
         <view class="list" wx:for="{{routers}}" wx:key="name">
-            <view class="list__icon" bindtap='intopage'>
+                    <view class="list__icon" bindtap='intopage' id="{{item.id}}">
                 <image src=" {{item.icon}}" mode="scaleToFill" />
             </view>
             <text>{{item.name}}</text>

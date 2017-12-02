@@ -1,0 +1,51 @@
+.page__hd{
+    height: 100rpx;
+    width: 100%;
+ 
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+.page__hd_user{
+    height: 45rpx;
+    width: 45rpx;
+    margin-left:50rpx; 
+    flex-direction: row;
+  
+    justify-content: center;
+    align-items: center;
+
+}
+.page__hd_user image{
+  height: 40rpx;
+    width: 40rpx;
+}
+.swiper-tap{
+     height: 100rpx;
+    width: 560rpx;
+     display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+.swiper-tap-item{
+    width: 33.333333%;
+
+    text-align: center;
+    font-size: 40rpx;
+    color: #666666;
+}
+.page__hd_more{
+     height: 45rpx;
+    width: 45rpx;
+
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
+.page__hd_more image{
+ height: 45rpx;
+    width: 45rpx;
+}
