@@ -2,6 +2,7 @@
 @import '../../weui.wxss';
 .page{
   overflow: hidden;
+
   background-color: #f5f5f5;
 }
 .page__hd{
@@ -121,23 +122,42 @@ swiper{
   width: 100%;
   height: 260rpx;
 background-color: white;
+
+}
+.page__life_service_hd_avatar{
+    width: 7rpx;
+    height: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 12rpx;
+    border-radius:3rpx;
+    background-color:   #2296ea;
 }
 .page__life_service_hd{
-  width: 100%;
+ 
+    width: 100%;
   height: 60rpx;
   margin-top: 25rpx;
   font-size: 35rpx;
    color: #333333;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   border-bottom: 2rpx solid #f5f5f5;
 }
 .page__life_service_lfet{
-  width: 50%;
+  width: 374rpx;
   height: 200rpx;
   float: left;
+  border-right: 1rpx solid #f5f5f5;
 }
 .page__life_service_right{
-  width: 50%;
+  width: 374rpx;
   height: 200rpx;
   float: left;
+  
+
+
+  
 }
 .service_text{
     width: 255rpx;
@@ -166,10 +186,76 @@ background-color: white;
     float:left;
     margin-top: 50rpx;
 }
-.page_bottom{
+
+
+.page_bottom_service{
     width: 100%;
-    height: 200rpx;
-   
-  
-    background-color: pink;
+    height: 350rpx;
+    background-color: white;
+}
+.page_bottom_service_hd{
+    width: 100%;
+    height: 100rpx;
+    margin-top: 25rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.page_bottom_service_hd_avatar{
+     width: 100rpx;
+    height: 100rpx;
+    margin-left: 20rpx;
+}
+.page_bottom_service_hd_discripe{
+     width: 510rpx;
+    color: #333333;
+    font-size: 35rpx;
+}
+.page_bottom_service_hd_choice{
+     width: 100rpx;
+    height: 100rpx;
+    margin-left: 20rpx;
+}
+.page_bottom_service_hd_choice image{
+     width: 100rpx;
+    height: 100rpx;
+}
+.bottom_service_text{
+    width: 355rpx;
+    height: 250rpx;
+    overflow: hidden;
+    margin-left:20rpx ;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page_bottom_service_bd_header{
+    font-size: 40rpx;
+    color: #333333;
+}
+.page_bottom_service_bd_discripe{
+    font-size: 30rpx;
+    color: #888888;
+    overflow: hidden;
+}
+.page_bottom_service_bd_get{
+    width: 40%;
+    text-align: center;
+    font-size: 25rpx;
+    color: #2296ea;
+    background-color: #ecf6fe;
+    margin-top: 20rpx;
+    border-radius: 25rpx;
+    border: 1rpx solid  #47a8ee;
+}
+.page_bottom_service_bd_avatar{
+    width: 300rpx;
+    height: 250rpx;
+    float: left;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

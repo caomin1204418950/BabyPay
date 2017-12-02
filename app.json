@@ -4,17 +4,18 @@
     "pages/mine/mine",
     "pages/friends/friends",
     "pages/koubei/koubei",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/connector/connector"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "d",
     "navigationBarBackgroundColor": "#1e82d2",
     "navigationBarTitleText": "BabyPay",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "backgroundColor": "white",
-    "color": "black",
+   
+    "color": "#969696",
     "list": [
       {
         "pagePath": "pages/index/index",
