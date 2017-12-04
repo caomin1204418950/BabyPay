@@ -3,16 +3,39 @@
 <view class='page'>
     <view class='page__hd'>
         <view class='page__hd_user'>
-            <image  src='../../images/user.png' bindtap='into_page_user'></image>
+            <image src='../../images/user.png' bindtap='into_page_user'></image>
         </view>
         <view class='swiper-tap'>
-            <view class='swiper-tap-item'>快车</view>
-            <view class='swiper-tap-item'>专车</view>
-            <view class='swiper-tap-item'>代驾</view>
+            <view class="swiper-tap-item {{activeIndex==0?'active':''}}" 
+            bindtap='changecolor' data-index='0'>快车</view>
+            <view class="swiper-tap-item {{activeIndex==1?'active':''}}" 
+            bindtap='changecolor' data-index='1'>专车</view>
+            <view class="swiper-tap-item {{activeIndex==2?'active':''}}"
+             bindtap='changecolor' data-index='2'>代驾</view>
         </view>
-         <view class='page__hd_more' bindtap='into_page_more'>
+        <view class='page__hd_more' bindtap='into_page_more'>
             <image src='../../images/more.png'></image>
         </view>
     </view>
+</view>
 
+    <view class='map'></view>
+
+<view class='bottom'>
+<view class='bottom-items'>
+    <view class="bottom-item_one  {{activeIndex==1?'':'display'}}" bindtap='jieji'>接机 用车</view>
+    <view class='bottom-item_two'>
+        <view class="bottom-item_two_left  {{activeIndex==2?'':'display'}}">
+            <view class="bottom-item_two_left_left">日常代驾</view>
+             <view class="bottom-item_two_left_right">多位司机</view>
+        </view> 
+        <view class="bottom-item_two_center {{activeIndex==0||activeIndex==1?'':'display'}}">现在出发</view> 
+    </view>
+</view>
+    
+
+    <view class='bottom_place'>
+        <view class='bottom_place_get'>当前位置</view>
+        <view class='bottom_place_input'>您要去哪儿</view>
+    </view>
 </view>

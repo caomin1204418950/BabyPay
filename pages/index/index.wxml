@@ -1,17 +1,39 @@
-<view class="page">
+
+<view class="zhezhao {{activeIndex==0?'active':''}}" bindtouchend='touch_add_image'data-index="0"></view>
+<view class="page" >
+
+    <view class="add_table {{activeIndex==0?'active':''}}">
 
 
 
+        <view class="add_table_item ">
+            <image src='../../images/发起群聊.png' />
+            <text>发起群聊</text>
+        </view>
+        <view class='add_table_item'>
+            <image src='../../images/添加朋友.png' />
+            <text>添加朋友</text>
+        </view>
+        <view class='add_table_item'>
+            <image src='../../images/扫一扫.png' />
+            <text>扫一扫</text>
+        </view>
+        <view class='add_table_item_last'>
+            <image src='../../images/收钱码.png' />
+            <text>收钱</text>
+        </view>
+
+    </view>
     <view class="page__hd hd_row">
 
         <view class="page__hd_search center">
 
-            <image src="../../images/search.png" />
+            <image src="../../images/search.png"/>
             <navigator url="../search/search" hover-class="none">
-                <view class="push"></view>
+                <view class="push" ></view>
 
             </navigator>
-            <view class="page__hd_search_talk">
+            <view class="page__hd_search_talk" bindtouchend='touch_add_image' data-index="0">
                 <image src="../../images/talk.png" />
             </view>
 
@@ -19,87 +41,91 @@
 
 
         <navigator url="../connector/connector" hover-class="none">
-            <view class="page__hd_friends">
+            <view class="page__hd_friends" bindtouchend='touch_add_image' data-index="0">
                 <image src="../../images/friends.png" />
             </view>
         </navigator>
-        <view class="page__hd_add">
+        <view class="page__hd_add" bindtap='touch_add_image' data-index="1">
             <image src="../../images/add.png" />
         </view>
     </view>
-    <view class="page__mid_service">
-        <view class="list" wx:for="{{routers}}" wx:key="name">
-                    <view class="list__icon" bindtap='intopage' id="{{item.id}}">
-                <image src=" {{item.icon}}" mode="scaleToFill" />
+
+    <view bindtouchend='touch_add_image' data-index="0">
+        <view class="page__mid_service">
+            <view class="list" wx:for="{{routers}}" wx:key="name">
+                <view class="list__icon" bindtap='intopage' id="{{item.id}}">
+                    <image src=" {{item.icon}}" mode="scaleToFill" />
+                </view>
+                <text>{{item.name}}</text>
             </view>
-            <text>{{item.name}}</text>
+        </view>
+
+        <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true">
+            <swiper-item class="swiper_item" wx:for="{{tips}}">
+                <image src="{{item.url}}"></image>
+            </swiper-item>
+        </swiper>
+        <view class="page__life_service">
+
+            <view class="page__life_service_hd">
+                <view class="page__life_service_hd_avatar"></view>
+                惠支付</view>
+            <view class="page__life_service_lfet">
+                <view class="service_text">
+                    <view class="service_header">花呗短信提醒</view>
+                    <view class="service_discripe">花呗超值权益</view>
+                </view>
+                <view class="service_avatar">图片</view>
+            </view>
+            <view class="page__life_service_right">
+                <view class="service_text">
+                    <view class="service_header">支付宝发红包</view>
+                    <view class="service_discripe">通知好友来领取</view>
+                </view>
+                <view class="service_avatar">图片</view>
+            </view>
+        </view>
+        <view class="page__life_service">
+            <view class="page__life_service_hd">
+                <view class="page__life_service_hd_avatar"></view>
+
+                生活服务</view>
+            <view class="page__life_service_lfet">
+                <view class="service_text">
+                    <view class="service_header">找兼职实习？</view>
+                    <view class="service_discripe">支付宝来帮你忙</view>
+                </view>
+                <view class="service_avatar">图片</view>
+            </view>
+            <view class="page__life_service_right">
+                <view class="service_text">
+                    <view class="service_header">公积金提取</view>
+                    <view class="service_discripe">公积金用途有哪些</view>
+                </view>
+                <view class="service_avatar">图片</view>
+            </view>
+        </view>
+
+        <view class="page_bottom_service">
+            <view class="page_bottom_service_hd">
+                <view class="page_bottom_service_hd_avatar"> 图片</view>
+                <view class="page_bottom_service_hd_discripe"> 品牌闪购</view>
+                <view class="page_bottom_service_hd_choice">
+                    <image src='../../images/choice.png'></image>
+                </view>
+            </view>
+
+            <view class="page_bottom_service_bd">
+                <view class="bottom_service_text">
+                    <view class="page_bottom_service_bd_header">领100元店铺卷 </view>
+                    <view class="page_bottom_service_bd_discripe"> 品牌卷王，手快有手慢无</view>
+                    <view class="page_bottom_service_bd_get">立即抢卷 </view>
+                </view>
+
+                <view class="page_bottom_service_bd_avatar"> 商品图片</view>
+
+            </view>
+
         </view>
     </view>
-
-    <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true">
-        <swiper-item class="swiper_item" wx:for="{{tips}}">
-            <image src="{{item.url}}"></image>
-        </swiper-item>
-    </swiper>
-    <view class="page__life_service">
-       
-        <view class="page__life_service_hd">
-         <view class="page__life_service_hd_avatar"></view>
-        惠支付</view>
-        <view class="page__life_service_lfet">
-            <view class="service_text">
-                <view class="service_header">花呗短信提醒</view>
-                <view class="service_discripe">花呗超值权益</view>
-            </view>
-            <view class="service_avatar">图片</view>
-        </view>
-        <view class="page__life_service_right">
-            <view class="service_text">
-                <view class="service_header">支付宝发红包</view>
-                <view class="service_discripe">通知好友来领取</view>
-            </view>
-            <view class="service_avatar">图片</view>
-        </view>
-    </view>
-    <view class="page__life_service">
-        <view class="page__life_service_hd">
-         <view class="page__life_service_hd_avatar"></view>
-        
-        生活服务</view>
-        <view class="page__life_service_lfet">
-            <view class="service_text">
-                <view class="service_header">找兼职实习？</view>
-                <view class="service_discripe">支付宝来帮你忙</view>
-            </view>
-            <view class="service_avatar">图片</view>
-        </view>
-        <view class="page__life_service_right">
-            <view class="service_text">
-                <view class="service_header">公积金提取</view>
-                <view class="service_discripe">公积金用途有哪些</view>
-            </view>
-            <view class="service_avatar">图片</view>
-        </view>
-    </view>
-
-    <view class="page_bottom_service">
-        <view class="page_bottom_service_hd">
-            <view class="page_bottom_service_hd_avatar"> 图片</view>
-            <view class="page_bottom_service_hd_discripe"> 品牌闪购</view>
-            <view class="page_bottom_service_hd_choice"><image src='../../images/choice.png'></image> </view>
-        </view>
-
-        <view class="page_bottom_service_bd">
-            <view class="bottom_service_text">
-                <view class="page_bottom_service_bd_header">领100元店铺卷 </view>
-                <view class="page_bottom_service_bd_discripe"> 品牌卷王，手快有手慢无</view>
-                <view class="page_bottom_service_bd_get">立即抢卷 </view>
-            </view>
-
-            <view class="page_bottom_service_bd_avatar"> 商品图片</view>
-
-        </view>
-
-    </view>
-
 </view>

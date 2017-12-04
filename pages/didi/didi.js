@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+      activeIndex:0
   },
 
     into_page_user:function(){
@@ -17,6 +17,20 @@ Page({
         wx.navigateTo({
             url: '../didi_more/more',
         })
+    },
+
+    changecolor: function(e){
+    console.log(e);
+    this.setData({
+        activeIndex : e.target.dataset.index
+    })
+         
+
+    console.log(this.data);
+    },
+   
+    daijia:function(e){
+        console.log(e);
     },
   /**
    * 生命周期函数--监听页面加载

@@ -4,6 +4,7 @@
 
 Page({
   data: {
+  activeIndex:0,
   routers:[
     
       { 
@@ -110,7 +111,15 @@ tips:[
       }
 
   },
-
+  touch_add_image:function(e){
+        console.log(e);
+        var data = e.currentTarget.dataset.index;
+        this.setData({
+            activeIndex: e.currentTarget.dataset.index,
+            
+        })
+        console.log(this.data.activeIndex);
+  },
   onLoad: function (options) {
   
      
