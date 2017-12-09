@@ -1,150 +1,272 @@
-.page__hd{
+/* .page{
+    width: 100%;
+    height: 100vh;
+} */
+
+.page__hd {
     height: 100rpx;
     width: 100%;
- 
+    position: fixed;
     display: flex;
     flex-direction: row;
-
     align-items: center;
 }
-.page__hd_user{
+
+.page__hd_user {
     height: 45rpx;
     width: 45rpx;
-    margin-left:50rpx; 
+    margin-left: 50rpx;
     flex-direction: row;
-  
     justify-content: center;
     align-items: center;
-
 }
-.page__hd_user image{
-  height: 40rpx;
+
+.page__hd_user image {
+    height: 40rpx;
     width: 40rpx;
 }
-.swiper-tap{
-     height: 100rpx;
-    width: 560rpx;
-     display: flex;
-    flex-direction: row;
 
+.swiper-tap {
+    height: 100rpx;
+    width: 560rpx;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.swiper-tap-item{
-    width: 33.333333%;
 
+.swiper-tap-item {
+    width: 33.333333%;
     text-align: center;
     font-size: 40rpx;
-    color: #666666;
+    color: #666;
 }
-.page__hd_more{
-     height: 45rpx;
-    width: 45rpx;
 
+.page__hd_more {
+    height: 45rpx;
+    width: 45rpx;
     display: flex;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
 }
-.page__hd_more image{
- height: 45rpx;
+
+.page__hd_more image {
+    height: 45rpx;
     width: 45rpx;
 }
 
-.map{
+.map {
     width: 100%;
-    height: 2000rpx;
-    background-color: red ;
-    opacity: .2;
-}
-
-
-
-.bottom{
-    width: 100%;
-    height: 340rpx;
-    background-color: pink;
+    height: 720rpx;
     position: fixed;
-    bottom: 0;
+    margin-top: 100rpx;
+    z-index: -1;
+}
 
-}
-.bottom-items{
-     width: 100%;
-    height: 140rpx;
-position: relative;
-}
-.bottom-item_one{
-  
+.map_height {
+    margin-top: 100rpx;
     width: 100%;
-    height: 70rpx;
-
-
-  
-}
-.bottom-item_two{
-    width: 100%;
-    height: 70rpx;
-
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    
-
-}
-
-.bottom-item_two_left{
-    width: 460rpx;
-    height: 70rpx;
- 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  
-}
-.bottom-item_two_left_left{
-    width: 230rpx;
-    height: 70rpx;
-
-    text-align: center;
-}
-.bottom-item_two_left_right{
-    width: 230rpx;
-    height: 70rpx;
-
-    text-align: center;
+    height: 810rpx;
+    position: fixed;
+    z-index: -1;
     
 }
-.bottom-item_two_center{
-    width: 100%;    
-    height: 70rpx;
 
+.bottom-item_one {
+    width: 100%;
+    height: 90rpx;
+    position: fixed;
+    bottom: 275rpx;
     display: flex;
-    justify-content: center;
-    align-items: center;
-         
+    flex-direction: row;
+    background-color: #fafafa;
 }
 
-.display{
-     display: none;
+.bottom-item_one_item {
+    width: 70rpx;
+    height: 84rpx;
+    font-size: 35rpx;
+    text-align: center;
+    line-height: 87rpx;
+    color: #999;
+    margin-left: 50rpx;
 }
-.active{
-    color: red;
+
+.item_bottom {
+    width: 70rpx;
+    height: 84rpx;
+    font-size: 35rpx;
+    text-align: center;
+    line-height: 87rpx;
+    color: #333;
+    margin-left: 50rpx;
+    border-bottom: 6rpx solid #fc9153;
 }
-.bottom_place{
+
+.jieji {
     width: 100%;
     height: 200rpx;
     position: fixed;
     bottom: 0;
-    
 }
-.bottom_place_get{
-     width: 100%;
-    height: 100rpx;
-    background-color: purple;
+
+.bottom-item_two {
+    width: 100%;
+    height: 76rpx;
+    position: fixed;
+    bottom: 200rpx;
+    display: flex;
+    flex-direction: row;
+    background-color: #fafafa;
 }
-.bottom_place_input{
-     width: 100%;
+
+.bottom-item_two_left {
+    width: 480rpx;
+    height: 76rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom-item_two_left_left {
+    width: 160rpx;
+    height: 70rpx;
+    font-size: 35rpx;
+    color: #333;
+    text-align: center;
+    line-height: 70rpx;
+    margin-left: 45rpx;
+    border-bottom: 6rpx solid #fc9153;
+}
+
+.bottom-item_two_left_right {
+    width: 160rpx;
+    height: 70rpx;
+    color: #999;
+    font-size: 35rpx;
+    line-height: 70rpx;
+    text-align: center;
+    margin-left: 45rpx;
+    border-bottom: 6rpx solid #fafafa;
+}
+
+.bottom-item_two_center {
+    width: 100%;
+    height: 76rpx;
+    color: #666;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2rpx solid #ebebeb;
+}
+
+.bottom-item_two_center image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}
+
+.display {
+    display: none;
+}
+
+.active {
+    color: #fc9153;
+}
+
+.bottom_place {
+    width: 100%;
+    height: 202rpx;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom_place_get {
+    width: 100%;
     height: 100rpx;
-     background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2rpx solid #ebebeb;
+}
+
+.bottom_place_get_dot {
+    width: 60rpx;
+    height: 100rpx;
+    color: #3cbca3;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.bottom_place_get_text {
+    color: #000;
+    font-size: 40rpx;
+      overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.bottom_place_input {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom_place_input_dot {
+    width: 60rpx;
+    height: 100rpx;
+    color: #fc9153;
+    text-align: center;
+    line-height: 100rpx;
+  
+}
+
+.bottom_place_input_text {
+    color: #fc9153;
+    font-size: 40rpx;
+         overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.plane_num {
+    width: 100%;
+    height: 100rpx;
+    border-bottom: 3rpx solid #ebebeb;
+    display: flex;
+    flex-direction: row;
+}
+
+.plane_num_text {
+    width: 670rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin-left: 25rpx;
+    color: #fc9153;
+}
+
+.plane_num image {
+    width: 50rpx;
+    height: 50rpx;
+    opacity: 0.5;
+    margin-left: 25rpx;
+    margin-top: 25rpx;
+}
+
+.plane_break {
+    width: 100%;
+    height: 97rpx;
+    text-align: center;
+    line-height: 100rpx;
+    color: #a5a5a5;
+    font-size: 30rpx;
+}
+
+.plane_break text {
+    font-size: 20rpx;
+    opacity: 0.8;
 }

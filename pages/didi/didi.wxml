@@ -6,36 +6,71 @@
             <image src='../../images/user.png' bindtap='into_page_user'></image>
         </view>
         <view class='swiper-tap'>
-            <view class="swiper-tap-item {{activeIndex==0?'active':''}}" 
-            bindtap='changecolor' data-index='0'>快车</view>
-            <view class="swiper-tap-item {{activeIndex==1?'active':''}}" 
-            bindtap='changecolor' data-index='1'>专车</view>
-            <view class="swiper-tap-item {{activeIndex==2?'active':''}}"
-             bindtap='changecolor' data-index='2'>代驾</view>
+            <view class="swiper-tap-item {{activeIndex==0?'active':''}}" bindtap='changecolor' data-index='0'>快车</view>
+            <view class="swiper-tap-item {{activeIndex==1?'active':''}}" bindtap='changecolor' data-index='1'>专车</view>
+            <view class="swiper-tap-item {{activeIndex==2?'active':''}}" bindtap='changecolor' data-index='2'>代驾</view>
         </view>
         <view class='page__hd_more' bindtap='into_page_more'>
             <image src='../../images/more.png'></image>
         </view>
     </view>
-</view>
 
-    <view class='map'></view>
 
-<view class='bottom'>
-<view class='bottom-items'>
-    <view class="bottom-item_one  {{activeIndex==1?'':'display'}}" bindtap='jieji'>接机 用车</view>
+
+
+    <map class= "map {{activeIndex==1?'':'map_height'}}"   longitude="{{longitude}}" latitude="{{latitude}}"markers="{{markers}}"> 
+
+
+    </map>
+
+    <view class="bottom-item_one  {{activeIndex==1?'':'display'}}" >
+       <view class="bottom-item_one_item {{item_bottom==0?'item_bottom':''}}" bindtap='change_bottom_item' data-index="0"> 用车</view>
+       <view class="bottom-item_one_item {{item_bottom==1?'item_bottom':''}}"bindtap='change_bottom_item'  data-index="1"> 接机</view>
+       <view class="bottom-item_one_item {{item_bottom==2?'item_bottom':''}}"bindtap='change_bottom_item'  data-index="2"> 送机</view>
+    
+    </view>
+
+
+
+
     <view class='bottom-item_two'>
         <view class="bottom-item_two_left  {{activeIndex==2?'':'display'}}">
             <view class="bottom-item_two_left_left">日常代驾</view>
-             <view class="bottom-item_two_left_right">多位司机</view>
-        </view> 
-        <view class="bottom-item_two_center {{activeIndex==0||activeIndex==1?'':'display'}}">现在出发</view> 
-    </view>
-</view>
-    
+            <view class="bottom-item_two_left_right">多位司机</view>
+        </view>
+        <view class="bottom-item_two_center {{activeIndex==0||activeIndex==1?'':'display'}}">
 
-    <view class='bottom_place'>
-        <view class='bottom_place_get'>当前位置</view>
-        <view class='bottom_place_input'>您要去哪儿</view>
+        <image src='../../images/时间.png'></image>
+       
+
+        <picker mode="time" value="time"  start="00:00" end="23:59" bindchange='changeTime'>
+           
+            <view> {{times}}</view>
+        </picker>
+        
+     
+       
+        </view>
+    </view>
+
+
+
+    <view class="bottom_place {{item_bottom==1?'display':''}}">
+        <view class='bottom_place_get'bindtap="chooselocation"> 
+
+        <view class='bottom_place_get_dot'>●</view>
+        <view class='bottom_place_get_text'>{{adress}}</view>
+        </view>
+        <view class='bottom_place_input'bindtap="choosegoal">
+        <view class='bottom_place_input_dot'>●</view>
+        <view class='bottom_place_input_text'>{{goal}}</view>
+        </view>
+    </view>
+    <view class="jieji {{item_bottom==1?'':'display'}}">
+     <view class='plane_num'>
+     <image src='../../images/航班.png'></image>
+     <view class='plane_num_text'>请输入航班号</view>
+     </view>
+        <view class='plane_break'><text>●</text> 航班延误免费等</view>
     </view>
 </view>

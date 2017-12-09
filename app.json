@@ -1,5 +1,6 @@
 {
     "pages": [
+  
         "pages/index/index",
         "pages/mine/mine",
         "pages/friends/friends",
@@ -8,7 +9,8 @@
         "pages/connector/connector",
         "pages/didi/didi",
         "pages/didi_user/user",
-        "pages/didi_more/more"
+        "pages/didi_more/more",
+        "pages/didi_pay/pay"
     ],
     "window": {
         "backgroundTextStyle": "light",
