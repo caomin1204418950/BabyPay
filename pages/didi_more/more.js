@@ -11,6 +11,21 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  kuaiche:function(){
+    wx.redirectTo({
+        url: '../didi/didi?activeIndex=0',    
+    })  
+  },
+  zhuanche: function () {
+      wx.redirectTo({
+          url: '../didi/didi?activeIndex=1',
+      })
+  },
+  daijia: function () {
+      wx.redirectTo({
+          url: '../didi/didi?activeIndex=2',
+      })
+  },
   onLoad: function (options) {
   
   },

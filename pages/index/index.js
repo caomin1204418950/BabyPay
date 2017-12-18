@@ -5,6 +5,7 @@
 Page({
   data: {
   activeIndex:0,
+  show:"",
   routers:[
     
       { 
@@ -101,24 +102,28 @@ tips:[
         wx.navigateTo({
           url: '../didi/didi'})
       }
-      else if(id=0){
-        wx.scanCode({
-          onlyFromCamera: true,
-          success: (res) => {
-            console.log(res)
-          }
-        })
-      }
 
   },
   touch_add_image:function(e){
-        console.log(e);
         var data = e.currentTarget.dataset.index;
         this.setData({
             activeIndex: e.currentTarget.dataset.index,
             
         })
-        console.log(this.data.activeIndex);
+  },
+
+  scan:function(e){
+      var that=this;
+      console.log(e);
+      wx.scanCode({
+          success: (res) => {
+              console.log(res)
+            
+              that.setData({
+                  show:res.result
+              })  
+          }
+      })
   },
   onLoad: function (options) {
   

@@ -1,12 +1,14 @@
 <!--pages/didi_user/user.wxml-->
 <view class='page'>
 
-<view class='page_sgin_in'>登录</view>
-<view class='page_tel'>
-   <input type="number" placeholder="请输入手机号"class="telephone"></input>
-
-</view>
-<view class='page_next'>下一步</view>
+    <view class='page_sgin_in'>登录</view>
+    <view class='page_tel'>
+       <view class="telephone" ><input type="number" bindinput="get_value" placeholder="请输入手机号" value='{{text}}'></input></view> 
+        <view class="clear  {{cleardata==0?'display':''}}" bindtap='tel_clear'>
+            <image src='../../images/关闭.png'></image>
+        </view>
+    </view>
+    <view class="page_next {{change_data==1?'page_next_change':''}}">下一步</view>
 
 
 </view>

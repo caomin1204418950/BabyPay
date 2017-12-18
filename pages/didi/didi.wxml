@@ -18,7 +18,7 @@
 
 
 
-    <map class= "map {{activeIndex==1?'':'map_height'}}"   longitude="{{longitude}}" latitude="{{latitude}}"markers="{{markers}}"> 
+    <map id='mymap' class= "map {{activeIndex==1?'':'map_height'}}"   longitude="{{longitude}}" latitude="{{latitude}}"markers="{{markers}}" bindregionchange="changelocation"> 
 
 
     </map>

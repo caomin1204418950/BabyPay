@@ -14,7 +14,7 @@
             <image src='../../images/添加朋友.png' />
             <text>添加朋友</text>
         </view>
-        <view class='add_table_item'>
+        <view class='add_table_item' bindtap='scan'>
             <image src='../../images/扫一扫.png' />
             <text>扫一扫</text>
         </view>
@@ -128,4 +128,7 @@
 
         </view>
     </view>
+
+
+   
 </view>

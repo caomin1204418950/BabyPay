@@ -10,25 +10,27 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: white;
 }
 
 .page__hd_user {
     height: 45rpx;
-    width: 45rpx;
-    margin-left: 50rpx;
+    width: 15%;
+    display: flex;
+    
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .page__hd_user image {
-    height: 40rpx;
-    width: 40rpx;
+    height: 45rpx;
+    width: 45rpx;
 }
 
 .swiper-tap {
     height: 100rpx;
-    width: 560rpx;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,7 +46,7 @@
 
 .page__hd_more {
     height: 45rpx;
-    width: 45rpx;
+    width:15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +59,7 @@
 
 .map {
     width: 100%;
-    height: 720rpx;
+    height: 61vh;
     position: fixed;
     margin-top: 100rpx;
     z-index: -1;
@@ -66,7 +68,7 @@
 .map_height {
     margin-top: 100rpx;
     width: 100%;
-    height: 810rpx;
+    height: 67vh;
     position: fixed;
     z-index: -1;
     

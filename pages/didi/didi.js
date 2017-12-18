@@ -22,7 +22,10 @@ Page({
         })
     },
     into_page_more: function () {
-        wx.navigateTo({
+        // this.setData({
+        //     activeIndex:''
+        // })
+        wx.redirectTo({
             url: '../didi_more/more',
         })
     },
@@ -111,10 +114,38 @@ Page({
 
         })
     },
+    changelocation:function(e){
+        // var that = this;
+        // this.mapCtx = wx.createMapContext("mymap");
+        // this.mapCtx.getCenterLocation({
+        //     success: function (res) {
+
+        //         that.setData({
+        //             longitude: res.longitude
+        //             , latitude: res.latitude
+        //             , markers: [
+        //                 {
+        //                     id: 0
+        //                     , iconPath: "../../images/goal_location.png"
+        //                     , longitude: res.longitude
+        //                     , latitude: res.latitude
+        //                     , width: 25
+        //                     , height: 35
+        //                 }
+        //             ]
+        //         })
+
+        //     }
+        // })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        console.log(options);
+        this.setData({
+            activeIndex: options.activeIndex
+        })
         var that = this;
         wx.getLocation({
             type: 'gcj02',
@@ -130,7 +161,9 @@ Page({
                         latitude: res.latitude,
                         longitude: res.longitude,
                         iconPath: "../../images/location.png",
-                        title: "哪里"
+                        width:20,
+                        height:35,
+                        title: "此为当前位置"
 
                     }]
                 })

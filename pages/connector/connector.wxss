@@ -1,1 +1,5 @@
 /* pages/connector/connector.wxss */
+.cao{
+    height: 300rpx;
+    background-color: red;
+}

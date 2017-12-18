@@ -5,12 +5,61 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+      change_data:0,
+      text:'',
+      cleardata:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  tel_clear:function(){
+      this.setData({
+          change_data: 0,
+          cleardata: 0,
+          text: ''
+      })
+  },
+  get_value:function(e){
+   console.log(e.detail.value.length);
+   if (e.detail.value.length!=0){
+       this.setData({
+           cleardata: 1
+       })
+   }else{
+       this.setData({
+           cleardata: 0
+       })
+   };
+    
+   if (e.detail.value.length < 11) {
+       this.setData({
+           change_data: 0
+       })
+   }
+   if (e.detail.value.length == 11){
+       this.setData({
+           change_data: 1
+       })
+   }
+   if (e.detail.value.length>11){
+       this.setData({
+           change_data: 0
+       })
+       wx.showModal({
+           title: '提示',
+           content: '请输入正确的手机号',
+           success: function (res) {
+               if (res.confirm) {
+                   console.log('用户点击确定')
+               } else {
+                   console.log('用户点击取消')
+               }
+
+           }
+       })
+   }
+  },
   onLoad: function (options) {
   
   },
